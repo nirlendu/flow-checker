@@ -102,7 +102,7 @@
     "dev": "npm run clean && cross-env NODE_ENV='development' npm run build-webpack && npm run dev-server",
     "local-server": "cross-env NODE_ENV='development' LOCAL='true' DEBUG='true' NODE_PATH='.' PORT='3000' nodemon server.js",
     "local": "npm run clean && cross-env NODE_ENV='development' npm run build-webpack && npm run local-server",
-    "local-server-deploy": "cross-env NODE_ENV='development' LOCAL='true' DEBUG='true' NODE_PATH='.' PORT='3002' nohup nodemon -I server.js",
+    "local-server-deploy": "cross-env NODE_ENV='development' LOCAL='true' DEBUG='true' NODE_PATH='.' PORT='3002' nohup nodemon server.js </dev/null &",
     "local-deploy": "npm run clean && cross-env NODE_ENV='development' npm run build-webpack && npm run local-server-deploy"
   },
   "repository": {
