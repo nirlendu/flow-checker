@@ -59,7 +59,7 @@ router.get('/', function(req, res) {
 
 		if (JSON.stringify(response.body)=='{}'){
 			//Empty Json check == Wrong code
-			res.redirect(302,'/oops/404');
+			res.redirect(302,'/');
 		}else{
 
 		const initialState = {

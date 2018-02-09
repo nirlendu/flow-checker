@@ -49,7 +49,7 @@ app.use('/', router);
 
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
-	res.redirect(302,'/oops/404');
+	res.redirect(302,'/');
 });
 
 // Debug when the server starts

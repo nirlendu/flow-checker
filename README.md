@@ -6,6 +6,7 @@ Flow Checker.
 
 If running for the first time, run
 ```sh
+mkdir -p ../assets/static/js
 npm install
 ```
 
